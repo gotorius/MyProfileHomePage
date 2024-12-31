@@ -4,42 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>プロジェクト</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="projects.css">
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <a href="index.html">ホーム</a>
-      <a href="#projects">プロジェクト</a>
+      <a href="index.html">プロフィール</a>
+      <a href="skills.html">スキル</a>
+      <a href="projects.html">プロジェクト</a>
+      <a href="help.html">お問い合わせ</a>
+      <button id="toggle-dark-mode">🌙</button>
     </nav>
   </header>
+
   <main>
     <section id="projects">
       <h1>プロジェクト</h1>
 
       <!-- プロジェクトスライダー -->
       <div class="slider">
+        <button id="prev-slide">＜</button>
         <div class="slide">
           <img src="project1.jpg" alt="プロジェクト1">
           <h3>プロジェクト1</h3>
-          <p>プロジェクト1の詳細な説明。ここではプロジェクトの目的や技術的な背景、達成したことなどを紹介します。</p>
+          <p>プロジェクト1の詳細な説明。</p>
         </div>
         <div class="slide">
           <img src="project2.jpg" alt="プロジェクト2">
           <h3>プロジェクト2</h3>
-          <p>プロジェクト2の詳細な説明。これにはプロジェクトのターゲット、使用したツールや言語、達成した成果などを説明します。</p>
+          <p>プロジェクト2の詳細な説明。</p>
         </div>
         <div class="slide">
           <img src="project3.jpg" alt="プロジェクト3">
           <h3>プロジェクト3</h3>
-          <p>プロジェクト3の詳細な説明。ここではプロジェクトの特徴やその成果について詳しく書きます。</p>
+          <p>プロジェクト3の詳細な説明。</p>
         </div>
+        <button id="next-slide">＞</button>
       </div>
     </section>
   </main>
+
   <footer>
     <p>&copy; 2024 あなたの名前</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

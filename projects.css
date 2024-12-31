@@ -1,16 +1,18 @@
+/* ベーススタイル */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #f4f4f4;
     color: #333;
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* ヘッダー */
 header {
     background-color: #0078D7;
     color: white;
-    padding: 10px 0;
+    padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -20,15 +22,13 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
-    transition: background-color 0.3s;
+    font-size: 16px;
 }
 
 .navbar a:hover {
@@ -36,51 +36,105 @@ header {
     border-radius: 5px;
 }
 
-section {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: auto;
+.navbar button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
 }
 
+/* メインコンテンツ */
+main {
+    padding: 40px 20px;
+}
+
+#projects {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#projects h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+/* スライダー */
 .slider {
     display: flex;
-    overflow-x: scroll;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    overflow: hidden;
+    padding: 20px 0;
 }
 
 .slide {
-    min-width: 300px;
-    background-color: #f9f9f9;
+    flex: 0 0 250px; /* 幅を固定 */
+    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
     text-align: center;
+    transition: transform 0.3s ease;
 }
 
 .slide img {
     width: 100%;
-    height: auto;
-    border-radius: 5px;
+    height: 150px; /* 高さを固定 */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .slide h3 {
-    margin-top: 10px;
-    font-size: 1.5em;
+    font-size: 18px;
     color: #0078D7;
+    margin-bottom: 8px;
 }
 
 .slide p {
-    font-size: 1em;
+    font-size: 14px;
     color: #555;
+    line-height: 1.4;
 }
 
+.slider button {
+    background-color: #0078D7;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.slider button:hover {
+    background-color: #005bb5;
+}
+
+
+/* スライダーのインタラクション */
+.slide:hover {
+    transform: scale(1.05);
+}
+
+/* フッター */
 footer {
     background-color: #f1f1f1;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
+    margin-top: 40px;
 }
 
-/* ダークモードのスタイル */
+/* ダークモード */
 body.dark-mode {
     background-color: #333;
     color: #fff;
@@ -102,16 +156,12 @@ body.dark-mode .navbar a:hover {
     background-color: #444;
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-    }
+body.dark-mode .slide {
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
 
-    .slider {
-        flex-direction: column;
-    }
-
-    .slide {
-        min-width: 100%;
-    }
+body.dark-mode .slide h3,
+body.dark-mode .slide p {
+    color: #fff;
 }

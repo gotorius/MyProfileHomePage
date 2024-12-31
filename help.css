@@ -1,0 +1,158 @@
+/* ベーススタイル */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* ヘッダー */
+  header {
+    background-color: #0078D7;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .navbar a:hover {
+    background-color: #005bb5;
+    border-radius: 5px;
+  }
+  
+  .navbar button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* メインコンテンツ */
+  main {
+    padding: 40px 20px;
+  }
+  
+  #contact {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  #contact h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0078D7;
+  }
+  
+  /* フォーム */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea, button {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #0078D7;
+    box-shadow: 0 0 4px rgba(0, 120, 215, 0.5);
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  button {
+    background-color: #0078D7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #005bb5;
+  }
+  
+  /* フッター */
+  footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+  }
+  
+  /* ダークモード */
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  body.dark-mode header {
+    background-color: #222;
+  }
+  
+  body.dark-mode footer {
+    background-color: #222;
+  }
+  
+  body.dark-mode .navbar a {
+    color: #fff;
+  }
+  
+  body.dark-mode .navbar a:hover {
+    background-color: #444;
+  }
+  
+  body.dark-mode #contact {
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  }
+  
+  body.dark-mode input, 
+  body.dark-mode textarea, 
+  body.dark-mode button {
+    background-color: #555;
+    color: #fff;
+    border-color: #777;
+  }
+  
+  body.dark-mode input:focus, 
+  body.dark-mode textarea:focus {
+    border-color: #0078D7;
+    box-shadow: 0 0 4px rgba(0, 120, 215, 0.5);
+  }
+  
