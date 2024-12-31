@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>スキル</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="skill.css">
 </head>
 <body>
   <header>
@@ -16,43 +16,93 @@
         <button id="toggle-dark-mode">🌙</button>
     </nav>
   </header>
+  
   <main>
     <section id="skills">
       <h1>スキル</h1>
-      <div class="skill-bar">
-        <label>Python</label>
-        <progress value="80" max="100"></progress>
-      </div>
       
-      <div class="skill-bar">
-        <label>C++</label>
-        <progress value="70" max="100"></progress>
+      <!-- 言語セクション -->
+      <h2>言語</h2>
+      <div class="skill-category">
+        <h3>C</h3>
+        <div class="skill-bar">
+          <label>レベル3</label>
+          <progress value="60" max="100"></progress>
+        </div>
       </div>
 
-      <div class="skill-bar">
-        <label>Web開発 (HTML, CSS, JavaScript)</label>
-        <progress value="85" max="100"></progress>
+      <div class="skill-category">
+        <h3>C++</h3>
+        <div class="skill-bar">
+          <label>レベル3</label>
+          <progress value="70" max="100"></progress>
+        </div>
       </div>
 
-      <div class="skill-bar">
-        <label>機械学習 (TensorFlow, PyTorch)</label>
-        <progress value="75" max="100"></progress>
+      <div class="skill-category">
+        <h3>C#</h3>
+        <div class="skill-bar">
+          <label>レベル1</label>
+          <progress value="40" max="100"></progress>
+        </div>
       </div>
 
-      <div class="skill-bar">
-        <label>React</label>
-        <progress value="65" max="100"></progress>
+      <div class="skill-category">
+        <h3>Clojure</h3>
+        <div class="skill-bar">
+          <label>レベル1</label>
+          <progress value="10" max="100"></progress>
+        </div>
       </div>
 
-      <div class="skill-bar">
-        <label>Git & GitHub</label>
-        <progress value="90" max="100"></progress>
+      <div class="skill-category">
+        <h3>Cobol</h3>
+        <div class="skill-bar">
+          <label>レベル1</label>
+          <progress value="20" max="100"></progress>
+        </div>
+      </div>
+
+      <!-- 開発環境セクション -->
+      <h2>開発環境</h2>
+      <div class="skill-category">
+        <h3>Linux</h3>
+        <div class="skill-bar">
+          <label>レベル3</label>
+          <progress value="60" max="100"></progress>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>UNIX</h3>
+        <div class="skill-bar">
+          <label>レベル1</label>
+          <progress value="30" max="100"></progress>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Mac OS</h3>
+        <div class="skill-bar">
+          <label>レベル1</label>
+          <progress value="50" max="100"></progress>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Windows</h3>
+        <div class="skill-bar">
+          <label>レベル3</label>
+          <progress value="60" max="100"></progress>
+        </div>
       </div>
     </section>
   </main>
+  
   <footer>
-    <p>&copy; 2024 あなたの名前</p>
+    <p>&copy; 2024 gotorius</p>
   </footer>
+  
   <script src="script.js"></script>
 </body>
 </html>

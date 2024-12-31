@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>プロフィール</title>
+  <title>Gotoriusのプロフィール</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -16,49 +17,48 @@
       <button id="toggle-dark-mode">🌙</button>
     </nav>
   </header>
-  <main>  
-  
+
+  <main>
     <!-- プロフィールセクション -->
-    <section id="about">
-      <h1>あなたの名前</h1>
+    <section id="about" class="section-container">
+      <div class="profile-header">
+        <h1>Gotoriusのプロフィール</h1>
+      </div>
       <div class="profile-container">
         <img src="profile.jpg" alt="プロフィール写真" class="profile-img">
-        <p>こんにちは！私はプログラミングや機械学習に興味があります。</p>
+        <p>こんにちは！プロフィールご覧いただきありがとうございます。現在私は、九州工業大学の学部三年に属しています。プログラミングや機械学習に興味があり、現在はウェブアプリケーションの開発や
+            データ構造とアルゴリズムの学習に取り組んでいます。kaggleやAtCoderなどのプログラミングのコンテストに参加したりするなどして、日々新しい技術を学びながら成長しています。</p>
       </div>
     </section>
 
-    <!-- スキルセクション -->
-    <section id="skills">
-      <h2>スキル</h2>
-      <a href="skills.html">スキルページへ</a>
+    <!-- 趣味セクション -->
+    <section id="hobbies" class="section-container">
+      <h2>趣味・興味</h2>
+      <ul class="hobby-list">
+        <li>競技プログラミング</li>
+        <li>ゲーム (主にCodMobile)</li>
+        <li>バイク</li>
+        <li>トレーニング(筋トレ)</li>
+        <li>旅行</li>
+      </ul>
     </section>
 
-    <!-- プロジェクトセクション -->
-    <section id="projects">
-      <h2>プロジェクト</h2>
-      <a href="projects.html">プロジェクトページへ</a>
-    </section>
-
-    <!-- お問い合わせセクション -->
-    <section id="contact">
-      <h2>お問い合わせ</h2>
-      <form id="contact-form">
-        <label for="name">名前</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">メール</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">メッセージ</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">送信</button>
-      </form>
+    <!-- SNSリンクセクション -->
+    <section id="social-links" class="section-container">
+      <h2>SNSリンク</h2>
+      <div class="social-icons">
+        <a href="https://twitter.com/your_username" target="_blank" class="social-icon twitter">Twitter</a>
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="social-icon linkedin">LinkedIn</a>
+        <a href="https://github.com/gotorius" target="_blank" class="social-icon github">GitHub</a>
+        <a href="https://atcoder.jp/users/Tonakun" target="_blank" class="social-icon atcoder">AtCoder</a>
+      </div>
     </section>
   </main>
+
   <footer>
-    <p>&copy; 2024 あなたの名前</p>
+    <p>&copy; 2024 Gotorius</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
