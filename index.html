@@ -20,37 +20,59 @@
     <!-- プロフィールセクション -->
     <section id="about">
       <h1>あなたの名前</h1>
-      <img src="profile.jpg" alt="プロフィール写真" class="profile-img">
-      <p>こんにちは！私はプログラミングや機械学習に興味があります。</p>
+      <div class="profile-container">
+        <img src="profile.jpg" alt="プロフィール写真" class="profile-img">
+        <p>こんにちは！私はプログラミングや機械学習に興味があります。</p>
+      </div>
     </section>
 
     <!-- スキルセクション -->
     <section id="skills">
       <h2>スキル</h2>
-      <ul>
-        <li>プログラミング: Python, C++, JavaScript</li>
-        <li>機械学習: TensorFlow, PyTorch</li>
-        <li>Web開発: HTML, CSS, React</li>
-      </ul>
+      <div class="skill-bar">
+        <label>Python</label>
+        <progress value="80" max="100"></progress>
+      </div>
+      <div class="skill-bar">
+        <label>C++</label>
+        <progress value="70" max="100"></progress>
+      </div>
+      <div class="skill-bar">
+        <label>Web開発</label>
+        <progress value="85" max="100"></progress>
+      </div>
     </section>
 
     <!-- プロジェクトセクション -->
     <section id="projects">
       <h2>プロジェクト</h2>
-      <div class="project">
-        <img src="project1.jpg" alt="プロジェクト1">
-        <p>プロジェクト1の説明</p>
-      </div>
-      <div class="project">
-        <img src="project2.jpg" alt="プロジェクト2">
-        <p>プロジェクト2の説明</p>
+      <div class="slider">
+        <div class="slide">
+          <img src="project1.jpg" alt="プロジェクト1">
+          <p>プロジェクト1の説明</p>
+        </div>
+        <div class="slide">
+          <img src="project2.jpg" alt="プロジェクト2">
+          <p>プロジェクト2の説明</p>
+        </div>
       </div>
     </section>
 
     <!-- お問い合わせセクション -->
     <section id="contact">
       <h2>お問い合わせ</h2>
-      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <form id="contact-form">
+        <label for="name">名前</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">メール</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">メッセージ</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">送信</button>
+      </form>
     </section>
   </main>
   <footer>
