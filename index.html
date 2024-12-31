@@ -4,30 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>プロフィール</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-      color: #333;
-      text-align: center;
-    }
-    header {
-      background-color: #0078D7;
-      color: white;
-      padding: 20px 0;
-    }
-    section {
-      padding: 20px;
-    }
-    .profile-img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      margin: 20px auto;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -35,9 +12,12 @@
   </header>
   <section>
     <img src="profile.jpg" alt="プロフィール写真" class="profile-img">
-    <p>こんにちは！私はプログラミングや機械学習に興味があります。</p>
+    <p id="greeting">こんにちは！</p>
+    <p>私はプログラミングや機械学習に興味があります。</p>
     <p>AtCoderでアルゴリズムを学びながら成長中です。</p>
     <p>お問い合わせ: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <button id="change-message">メッセージを変更</button>
   </section>
+  <script src="script.js"></script>
 </body>
 </html>
