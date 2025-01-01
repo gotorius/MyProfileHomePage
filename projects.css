@@ -60,19 +60,6 @@ main {
     padding: 60px 20px;
 }
 
-/* プロジェクトセクション */
-#projects {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-#projects h1 {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 40px;
-    color: #333;
-}
 
 /* プロジェクトセクション */
 #projects {
@@ -86,7 +73,7 @@ main {
     text-align: center;
     margin-bottom: 40px;
     color: #333;
-}c
+}
 
 /* フッター */
 footer {
@@ -104,7 +91,7 @@ footer p {
 /* ダークモード */
 body.dark-mode {
     background-color: #333;
-    color: #fff; /* 文字色を白に変更 */
+    color: #fff; /* 文字色を白に設定 */
 }
 
 body.dark-mode header {
@@ -115,12 +102,20 @@ body.dark-mode footer {
     background-color: #222;
 }
 
+body.dark-mode footer p {
+    color: #ccc; /* フッターの文字色を調整 */
+}
+
 body.dark-mode .navbar a {
     color: #fff;
 }
 
 body.dark-mode .navbar a:hover {
     background-color: #444;
+}
+
+body.dark-mode #projects h1 {
+    color: #fff; /* プロジェクト見出しの文字色を白に設定 */
 }
 
 body.dark-mode .slider {
@@ -134,8 +129,13 @@ body.dark-mode .slide {
 
 body.dark-mode .slide h3,
 body.dark-mode .slide p {
-    color: #fff; /* 文字色を白に変更 */
+    color: #fff; /* スライダー内の文字色を白に設定 */
 }
+
+body.dark-mode .slide:hover {
+    background-color: #666; /* ホバー時の背景色を少し明るく設定 */
+}
+
 
 
 /* レスポンシブデザイン */
