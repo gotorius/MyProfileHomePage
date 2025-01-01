@@ -74,18 +74,101 @@ main {
     color: #333;
 }
 
+/* プロジェクトセクション */
+#projects {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#projects h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}c
+
+/* フッター */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+footer p {
+    color: #555;
+}
+
+/* ダークモード */
+body.dark-mode {
+    background-color: #333;
+    color: #fff; /* 文字色を白に変更 */
+}
+
+body.dark-mode header {
+    background-color: #222;
+}
+
+body.dark-mode footer {
+    background-color: #222;
+}
+
+body.dark-mode .navbar a {
+    color: #fff;
+}
+
+body.dark-mode .navbar a:hover {
+    background-color: #444;
+}
+
+body.dark-mode .slider {
+    background-color: #444;
+}
+
+body.dark-mode .slide {
+    background-color: #555;
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .slide h3,
+body.dark-mode .slide p {
+    color: #fff; /* 文字色を白に変更 */
+}
+
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .slider {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .slide {
+        flex: 0 0 100%;
+        margin: 0;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}
+
 /* スライダー */
 .slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3列レイアウト */
+    gap: 20px; /* 各スライド間の間隔 */
     padding: 20px 0;
 }
 
 .slide {
-    flex: 0 0 280px;
     background-color: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -116,99 +199,21 @@ main {
     margin-bottom: 15px;
 }
 
-.slider button {
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    font-size: 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.slider button:hover {
-    background-color: #333;
-    transform: scale(1.2);
-}
-
 /* スライダーのインタラクション */
 .slide:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* フッター */
-footer {
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 60px;
-    font-size: 14px;
-}
-
-footer p {
-    color: #555;
-}
-
-/* ダークモード */
-body.dark-mode {
-    background-color: #333;
-    color: #fff;
-}
-
-body.dark-mode header {
-    background-color: #222;
-}
-
-body.dark-mode footer {
-    background-color: #222;
-}
-
-body.dark-mode .navbar a {
-    color: #fff;
-}
-
-body.dark-mode .navbar a:hover {
-    background-color: #444;
-}
-
-body.dark-mode .slider {
-    background-color: #444;
-}
-
-body.dark-mode .slide {
-    background-color: #555;
-    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
-}
-
-body.dark-mode .slide h3,
-body.dark-mode .slide p {
-    color: #fff;
-}
-
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        gap: 10px;
-    }
-
     .slider {
-        flex-direction: column;
-        gap: 20px;
+        grid-template-columns: 1fr; /* モバイルでは1列表示 */
     }
 
     .slide {
         flex: 0 0 100%;
         margin: 0;
     }
-
-    footer {
-        font-size: 16px;
-    }
 }
+
